@@ -5,15 +5,19 @@
     android:background="@color/bg_color"
     android:gravity="bottom"
     android:orientation="vertical"
-    android:padding="@dimen/receipt_padding"
+    android:paddingBottom="@dimen/receipt_vertical_padding"
+    android:paddingLeft="@dimen/receipt_horizontal_padding"
+    android:paddingRight="@dimen/receipt_horizontal_padding"
+    android:paddingTop="@dimen/receipt_vertical_padding"
     tools:context=".ReceiptActivity" >
 
-    <ListView 
+    <ListView
         android:id="@android:id/list"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        ></ListView>
+        android:layout_weight="1" >
+    </ListView>
+
     <View
         android:layout_width="fill_parent"
         android:layout_height="@dimen/hr_height"
@@ -93,10 +97,10 @@
 
     <Button
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/button_height"
         android:layout_marginTop="10dp"
         android:gravity="center"
         android:onClick="finishButtonClicked"
-        android:text="@string/button_text" />
+        android:text="@string/button_finish" />
 
 </LinearLayout>

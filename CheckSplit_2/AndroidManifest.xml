@@ -6,13 +6,19 @@
 
     <uses-sdk
         android:minSdkVersion="10"
-        android:targetSdkVersion="16" />
+        android:targetSdkVersion="17" />
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+
+        <!--
+             The attribute windowSoftInputMode specifies how the keyboard should overlay.
+        	adjustPan does not resize the screen, it simply pans the screen up as far as necessary
+        	in order for the focused field to be visible above the keyboard
+        -->
         <activity
             android:name="com.example.checksplit.ReceiptActivity"
             android:label="@string/app_name"
@@ -22,6 +28,10 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.checksplit.SplitSummaryActivity"
+            android:label="@string/title_activity_split_summary" >
         </activity>
     </application>
 

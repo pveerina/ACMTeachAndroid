@@ -3,19 +3,23 @@
 
     <string name="app_name">Check Split</string>
     <string name="add_item_description">Add a line item to the receipt</string>
+    <string name="button_finish">Split it!</string>
     <string name="item_name_field_hint">Item Name</string>
     <string name="item_price_field_hint">Price</string>
     <string name="menu_settings">Settings</string>
-    <string name="button_text">Split it!</string>
     <string name="subtotal">Subtotal: </string>
-    <string name="total">Total: </string>
+    <string name="tag_person_description">Tag this item with one of your contacts</string>
     <string name="tip">Tip: </string>
+    <string name="total">Total: </string>
 
     <string-array name="tips_array">
-        <item >0%</item>
-        <item >10%</item>
-        <item >15%</item>
-        <item >20%</item>
+        <item>0%</item>
+        <item>10%</item>
+        <item>15%</item>
+        <item>20%</item>
     </string-array>
-    
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_split_summary">SplitSummaryActivity</string>
+
 </resources>

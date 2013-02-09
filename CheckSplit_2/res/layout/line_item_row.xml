@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_color"
+    android:minHeight="48dp" >
+
+    <ImageButton
+        android:id="@+id/add_person_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@color/bg_color"
+        android:contentDescription="@string/tag_person_description"
+        android:paddingRight="3dp"
+        android:paddingTop="3dp"
+        android:src="@drawable/social_add_person" />
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/add_person_button"
+        android:maxWidth="240dp"
+        android:textSize="@dimen/text_normal"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/item_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/text_small" />
+
+</RelativeLayout>
