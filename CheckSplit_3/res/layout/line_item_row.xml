@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_color"
+    android:minHeight="48dp"
+     >
+    <FrameLayout
+        android:id="@+id/frameLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" >
+       <ImageButton
+        android:id="@+id/add_person_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_color"
+        android:contentDescription="@string/tag_person_description"
+        android:paddingRight="3dp"
+        android:paddingTop="3dp"
+        android:src="@drawable/social_add_person"
+         />
+    </FrameLayout>
+    
+    <TextView
+        android:id="@+id/item_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/text_small" />
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_toRightOf="@id/frameLayout1"
+        android:layout_alignParentTop="true"
+        android:maxWidth="240dp"
+        android:textSize="@dimen/text_normal"
+        android:textStyle="bold"
+        android:layout_marginLeft="3dp" />
+
+
+</RelativeLayout>

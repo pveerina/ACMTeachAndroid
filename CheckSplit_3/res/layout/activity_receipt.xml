@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/receipt_vertical_padding"
+    android:paddingLeft="@dimen/receipt_horizontal_padding"
+    android:paddingRight="@dimen/receipt_horizontal_padding"
+    android:paddingTop="@dimen/receipt_vertical_padding"
+    tools:context=".ReceiptActivity" >
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </ListView>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/hr_height"
+        android:layout_marginBottom="@dimen/hr_padding"
+        android:layout_marginTop="@dimen/hr_padding"
+        android:background="#EEEEEE" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right" >
+
+        <EditText
+            android:id="@+id/item_name_field"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="70"
+            android:hint="@string/item_name_field_hint"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/item_price_field"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:hint="@string/item_price_field_hint"
+            android:inputType="numberDecimal" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_color"
+            android:contentDescription="@string/add_item_description"
+            android:onClick="addItemClicked"
+            android:src="@drawable/add_item_button" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/hr_height"
+        android:layout_marginBottom="@dimen/hr_padding"
+        android:layout_marginTop="@dimen/hr_padding"
+        android:background="#EEEEEE" />
+
+    <TextView
+        android:id="@+id/subtotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="@string/subtotal"
+        android:textSize="@dimen/text_small" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tip"
+            android:textSize="@dimen/text_normal" />
+
+        <Spinner
+            android:id="@+id/tip_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="@string/total"
+        android:textSize="@dimen/text_normal" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:onClick="finishButtonClicked"
+        android:text="@string/button_finish" />
+
+</LinearLayout>
